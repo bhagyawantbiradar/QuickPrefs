@@ -35,6 +35,7 @@ public class QuickPref {
         sharedPreferences.edit().putInt(key, value).apply();
     }
 
+
     public static int getInt(Context context, String preferenceName, String key, int value) {
         sharedPreferences = context.getSharedPreferences(preferenceName, Context.MODE_PRIVATE);
         return sharedPreferences.getInt(key, value);
